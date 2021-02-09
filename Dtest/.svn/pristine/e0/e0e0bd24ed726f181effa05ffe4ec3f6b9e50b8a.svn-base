@@ -1,0 +1,94 @@
+package socket;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.apache.log4j.Logger;
+
+import test3.DBCPTest;
+import utils.IOUtil;
+
+public class DbTestServer {
+	static Logger logger = Logger.getLogger(SocketServer.class);
+	static AtomicInteger SEQ = new AtomicInteger();
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int port = 9000;
+		ServerSocket ss = null;
+		try{
+			InetSocketAddress endpoint = new InetSocketAddress(port);
+			ss = new ServerSocket();
+			ss.bind(endpoint);
+			logger.info("Socket server listen : " + port);
+			Connection conn = null;
+			
+			while(true){
+				Socket socket = ss.accept();
+				InputStream in = null;
+				OutputStream out = null;
+				BufferedReader bfr = null;
+				PreparedStatement pstmt = null;
+				
+				int seq = SEQ.incrementAndGet();
+				long start = System.currentTimeMillis();
+				try{
+					in = socket.getInputStream();
+					out = socket.getOutputStream();
+					DBCPTest dbcpTest = new DBCPTest();
+					conn = dbcpTest.getInstance().getConnection();
+					pstmt = conn.prepareStatement("INSERT INTO ZIPCODE(seq,zipcode,sido,gugun,dong,bunji) VALUES (?,?,?,?,?,?)");
+					
+					String line;
+					String[] zc;
+					bfr = new BufferedReader(new InputStreamReader(in));
+					String header = bfr.readLine();
+					while((line = bfr.readLine()) != null) {
+						if(line.equals("end")) {
+							break;
+						}
+						zc = line.split("," , 6);
+						pstmt.setInt(1, Integer.parseInt(zc[0]));
+						pstmt.setString(2, zc[1]);
+						pstmt.setString(3, zc[2]);
+						pstmt.setString(4, zc[3]);
+						pstmt.setString(5, zc[4]);
+						pstmt.setString(6, zc[5]);
+						pstmt.executeUpdate();
+					}
+					logger.info("Recv[" + seq + "] : [" + "success" + "]");
+					
+					String sendDatastr = "success";
+					out.write(sendDatastr.getBytes());
+					out.flush();
+					logger.info("Send[" + seq + "] : [" + sendDatastr + "]");
+					
+					long end = System.currentTimeMillis();
+				    logger.info((end-start)/1000.0+"√ ");
+				}catch(Exception ex){
+					logger.error("[#ERROR][" + seq + "]", ex);
+				}finally{
+					if(pstmt != null)try {pstmt.close();}catch(SQLException e){e.printStackTrace();};
+					IOUtil.close(bfr);
+					IOUtil.close(socket);
+					if(conn != null)try {conn.close();}catch(SQLException e){e.printStackTrace();};
+				}
+			}
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}finally {
+			IOUtil.close(ss);
+		}
+	}
+
+}

@@ -1,0 +1,56 @@
+package com.thread;
+
+public class SyncTest {
+	public static Data data = new Data();
+	public static void main(String[] args) {
+		
+		System.out.println("시작");
+		Tom t = new Tom();
+		Jane j = new Jane();
+//		try {
+//				t.start();
+//				Tom.sleep(500);
+//				j.start();
+//				Tom.sleep(300);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//		synchronized (SyncTest.data) {
+			t.start();
+			j.start();
+//		}
+//		synchronized (SyncTest.data) {
+//			j.start();
+//		}
+		System.out.println(data.i);
+		System.out.println("종료");
+		
+
+	}
+	
+
+}
+class Tom extends Thread{
+	public void run() {
+		for(int i = 0; i < 100000; i++) {
+			synchronized (SyncTest.data) {
+				SyncTest.data.i++;
+			}
+//			SyncTest.data.suncValue();
+		}
+//				SyncTest.data.ru(100000);
+		System.out.println("Tom " + SyncTest.data.i);
+	}
+}
+class Jane extends Thread{
+	public void run() {
+		for(int i = 0; i < 100000; i++) {
+			synchronized (SyncTest.data) {
+				SyncTest.data.i++;
+			}
+//			SyncTest.data.suncValue();
+		}
+//		SyncTest.data.ru(100000);
+		System.out.println("Jane " + SyncTest.data.i);
+	}
+}

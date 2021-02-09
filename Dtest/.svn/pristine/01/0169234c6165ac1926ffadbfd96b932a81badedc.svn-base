@@ -1,0 +1,898 @@
+[
+ {
+  "seq": 2238,
+  "zipcode": "152-761",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로1동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2239,
+  "zipcode": "152-763",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로1동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2240,
+  "zipcode": "152-762",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로1동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2241,
+  "zipcode": "152-708",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로1동",
+  "bunji": "(102∼108동)"
+ },
+ {
+  "seq": 2242,
+  "zipcode": "152-720",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로1동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2243,
+  "zipcode": "152-868",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로1동",
+  "bunji": "642"
+ },
+ {
+  "seq": 2244,
+  "zipcode": "152-867",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로1동",
+  "bunji": "643∼651"
+ },
+ {
+  "seq": 2245,
+  "zipcode": "152-868",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로1동",
+  "bunji": "667∼699"
+ },
+ {
+  "seq": 2246,
+  "zipcode": "152-869",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로1동",
+  "bunji": "700∼703"
+ },
+ {
+  "seq": 2247,
+  "zipcode": "152-051",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로1동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2248,
+  "zipcode": "152-703",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2249,
+  "zipcode": "152-840",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "80∼90"
+ },
+ {
+  "seq": 2250,
+  "zipcode": "152-854",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "329"
+ },
+ {
+  "seq": 2251,
+  "zipcode": "152-854",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "339"
+ },
+ {
+  "seq": 2252,
+  "zipcode": "152-851",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "387∼395"
+ },
+ {
+  "seq": 2253,
+  "zipcode": "152-852",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "396∼405"
+ },
+ {
+  "seq": 2254,
+  "zipcode": "152-854",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "412∼415"
+ },
+ {
+  "seq": 2255,
+  "zipcode": "152-854",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "429∼430"
+ },
+ {
+  "seq": 2256,
+  "zipcode": "152-870",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "704∼705"
+ },
+ {
+  "seq": 2257,
+  "zipcode": "152-871",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "706∼730"
+ },
+ {
+  "seq": 2258,
+  "zipcode": "152-877",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "808∼809"
+ },
+ {
+  "seq": 2259,
+  "zipcode": "152-052",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로2동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2260,
+  "zipcode": "152-713",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "(101∼109동)"
+ },
+ {
+  "seq": 2261,
+  "zipcode": "152-790",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2262,
+  "zipcode": "152-790",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2263,
+  "zipcode": "152-776",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2264,
+  "zipcode": "152-776",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2265,
+  "zipcode": "152-741",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2266,
+  "zipcode": "152-775",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2267,
+  "zipcode": "152-775",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2268,
+  "zipcode": "152-767",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2269,
+  "zipcode": "152-766",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2270,
+  "zipcode": "152-766",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2271,
+  "zipcode": "152-779",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2272,
+  "zipcode": "152-766",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2273,
+  "zipcode": "152-780",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2274,
+  "zipcode": "152-711",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2275,
+  "zipcode": "152-779",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2276,
+  "zipcode": "152-779",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2277,
+  "zipcode": "152-740",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2278,
+  "zipcode": "152-769",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2279,
+  "zipcode": "152-789",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2280,
+  "zipcode": "152-719",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2281,
+  "zipcode": "152-719",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2282,
+  "zipcode": "152-719",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2283,
+  "zipcode": "152-719",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2284,
+  "zipcode": "152-719",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2285,
+  "zipcode": "152-777",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2286,
+  "zipcode": "152-759",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2287,
+  "zipcode": "152-718",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2288,
+  "zipcode": "152-778",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2289,
+  "zipcode": "152-768",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2290,
+  "zipcode": "152-847",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "145∼182"
+ },
+ {
+  "seq": 2291,
+  "zipcode": "152-848",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "183∼251"
+ },
+ {
+  "seq": 2292,
+  "zipcode": "152-849",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "252∼266"
+ },
+ {
+  "seq": 2293,
+  "zipcode": "152-874",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "773∼776"
+ },
+ {
+  "seq": 2294,
+  "zipcode": "152-875",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "777∼801"
+ },
+ {
+  "seq": 2295,
+  "zipcode": "152-878",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "810∼819"
+ },
+ {
+  "seq": 2296,
+  "zipcode": "152-879",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "820∼861"
+ },
+ {
+  "seq": 2297,
+  "zipcode": "152-880",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "1118∼1252"
+ },
+ {
+  "seq": 2298,
+  "zipcode": "152-880",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "1256"
+ },
+ {
+  "seq": 2299,
+  "zipcode": "152-880",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "1260"
+ },
+ {
+  "seq": 2300,
+  "zipcode": "152-053",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로3동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2301,
+  "zipcode": "152-764",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2302,
+  "zipcode": "152-839",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "73∼74"
+ },
+ {
+  "seq": 2303,
+  "zipcode": "152-841",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "91∼99"
+ },
+ {
+  "seq": 2304,
+  "zipcode": "152-845",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "114∼131"
+ },
+ {
+  "seq": 2305,
+  "zipcode": "152-846",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "132∼144"
+ },
+ {
+  "seq": 2306,
+  "zipcode": "152-873",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "313"
+ },
+ {
+  "seq": 2307,
+  "zipcode": "152-850",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "314∼328"
+ },
+ {
+  "seq": 2308,
+  "zipcode": "152-850",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "330∼338"
+ },
+ {
+  "seq": 2309,
+  "zipcode": "152-850",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "340∼386"
+ },
+ {
+  "seq": 2310,
+  "zipcode": "152-872",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "731∼750"
+ },
+ {
+  "seq": 2311,
+  "zipcode": "152-873",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "751∼772"
+ },
+ {
+  "seq": 2312,
+  "zipcode": "152-876",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "802∼807"
+ },
+ {
+  "seq": 2313,
+  "zipcode": "152-846",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "1257"
+ },
+ {
+  "seq": 2314,
+  "zipcode": "152-054",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로4동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2315,
+  "zipcode": "152-705",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2316,
+  "zipcode": "152-787",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2317,
+  "zipcode": "152-770",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2318,
+  "zipcode": "152-770",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2319,
+  "zipcode": "152-715",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2320,
+  "zipcode": "152-765",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2321,
+  "zipcode": "152-704",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2322,
+  "zipcode": "152-838",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "1∼62"
+ },
+ {
+  "seq": 2323,
+  "zipcode": "152-842",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "100∼106"
+ },
+ {
+  "seq": 2324,
+  "zipcode": "152-843",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "107∼108"
+ },
+ {
+  "seq": 2325,
+  "zipcode": "152-844",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "109∼113"
+ },
+ {
+  "seq": 2326,
+  "zipcode": "152-859",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "516∼540"
+ },
+ {
+  "seq": 2327,
+  "zipcode": "152-860",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "541∼547"
+ },
+ {
+  "seq": 2328,
+  "zipcode": "152-862",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "548∼587"
+ },
+ {
+  "seq": 2329,
+  "zipcode": "152-863",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "588∼599"
+ },
+ {
+  "seq": 2330,
+  "zipcode": "152-055",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로5동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2331,
+  "zipcode": "152-701",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2332,
+  "zipcode": "152-723",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2333,
+  "zipcode": "152-702",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2334,
+  "zipcode": "152-710",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2335,
+  "zipcode": "152-721",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2336,
+  "zipcode": "152-853",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "406∼411"
+ },
+ {
+  "seq": 2337,
+  "zipcode": "152-855",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "416∼428"
+ },
+ {
+  "seq": 2338,
+  "zipcode": "152-855",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "431∼440"
+ },
+ {
+  "seq": 2339,
+  "zipcode": "152-857",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "441∼471"
+ },
+ {
+  "seq": 2340,
+  "zipcode": "152-858",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "472∼521"
+ },
+ {
+  "seq": 2341,
+  "zipcode": "152-864",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "600∼603"
+ },
+ {
+  "seq": 2342,
+  "zipcode": "152-724",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "604∼606"
+ },
+ {
+  "seq": 2343,
+  "zipcode": "152-865",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "607∼620"
+ },
+ {
+  "seq": 2344,
+  "zipcode": "152-866",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "636∼640"
+ },
+ {
+  "seq": 2345,
+  "zipcode": "152-866",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "1262"
+ },
+ {
+  "seq": 2346,
+  "zipcode": "152-858",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "1269"
+ },
+ {
+  "seq": 2347,
+  "zipcode": "152-059",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로본동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2348,
+  "zipcode": "152-050",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로동",
+  "bunji": "null"
+ },
+ {
+  "seq": 2409,
+  "zipcode": "152-650",
+  "sido": "서울",
+  "gugun": "구로구",
+  "dong": "구로디지털단지우체국사서함",
+  "bunji": "null"
+ }
+]

@@ -1,0 +1,100 @@
+package dom;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+public class DomTest2 {
+
+	public static void main(String[] args) {
+		DomTest2 xmlTest = new DomTest2();
+		
+		xmlTest.domParser();
+//		xmlTest.domgPOJO();
+		
+	}
+	
+	private void domParser() {
+		try {
+			File file = new File(ClassLoader.getSystemResource("XmlTest.xml").getFile());
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document document = builder.parse(file);
+			document.getDocumentElement().normalize();//xml정규화
+			
+			NodeList nodeList = document.getElementsByTagName("donglist");
+			
+			for(int i = 0; i < nodeList.getLength(); i++) {
+				Node node = nodeList.item(i);
+				if(node.getNodeType() == Node.ELEMENT_NODE) {
+					Element eElement = (Element) node;
+				    System.out.println("seq : "  + eElement.getElementsByTagName("seq").item(0).getTextContent());
+				    System.out.println("zipcode : "   + eElement.getElementsByTagName("zipcode").item(0).getTextContent());
+				    System.out.println("sido : "    + eElement.getElementsByTagName("sido").item(0).getTextContent());
+				    System.out.println("gugun : "    + eElement.getElementsByTagName("gugun").item(0).getTextContent());
+				    System.out.println("dong : "    + eElement.getElementsByTagName("dong").item(0).getTextContent());
+				    System.out.println("bunji : "    + eElement.getElementsByTagName("bunji").item(0).getTextContent());
+				}
+				System.out.println("");
+			}
+			
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		} catch (SAXException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void domgPOJO(){
+		List<DongList> dongs = new ArrayList<DongList>();
+		DongList dong = null;
+		
+		try {
+			File file = new File(ClassLoader.getSystemResource("XmlTest.xml").getFile());
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document document = builder.parse(file);
+			document.getDocumentElement().normalize();//xml정규화
+			
+			NodeList nodeList = document.getElementsByTagName("donglist");
+			for(int i = 0; i < nodeList.getLength(); i++) {
+				Node node = nodeList.item(i);
+				if(node.getNodeType() == Node.ELEMENT_NODE) {
+					Element eElement = (Element) node;
+					dong = new DongList();
+					dong.setSeq(Integer.parseInt(eElement.getElementsByTagName("seq").item(0).getTextContent()));
+					dong.setZipcode(eElement.getElementsByTagName("seq").item(0).getTextContent());
+					dong.setSido(eElement.getElementsByTagName("sido").item(0).getTextContent());
+					dong.setGugun(eElement.getElementsByTagName("gugun").item(0).getTextContent());
+					dong.setDong(eElement.getElementsByTagName("dong").item(0).getTextContent());
+					dong.setBunji(eElement.getElementsByTagName("bunji").item(0).getTextContent());
+					
+					dongs.add(dong);
+				}
+			}
+			System.out.println(dongs);
+			
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		} catch (SAXException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+}

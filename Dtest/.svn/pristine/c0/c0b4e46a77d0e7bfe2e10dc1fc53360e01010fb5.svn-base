@@ -1,0 +1,12 @@
+[
+  {
+    "User": "hodong",
+    "age": 26,
+    "isNew": true
+  },
+  {
+    "User": "BBB",
+    "age": 24,
+    "isNew": true
+  }
+]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout"> 
+			<param name="ConversionPattern" value=" %d{yyyy-MM-dd HH:mm:ss.SSS} %m%n"/> 
+		</layout> 
+    </appender>
+    
+    <appender name="LOG_TEST_FILE" class="org.apache.log4j.DailyRollingFileAppender"> 
+		<param name="ImmediateFlush" value="true"/>
+		<param name="File" value="C:/Users/USER/Desktop/eclipse/eclipse-workspace/Dtest/logs/log.log"/>
+		<param name="Append" value="true"/>
+		<param name="DatePattern" value="'.'yyyy-MM-dd-HH"/>
+		<layout class="org.apache.log4j.PatternLayout"> 
+			<param name="ConversionPattern" value=" %d{yyyy-MM-dd HH:mm:ss.SSS} %m%n"/> 
+		</layout> 
+	</appender>
+	
+
+	<logger name="syncLogTestLogger" additivity="false">
+	   <level value="DEBUG" />
+	   <appender-ref ref="CONSOLE" />
+	   <appender-ref ref="LOG_TEST_FILE" />
+	</logger>
+
+	<root> 
+		<priority value ="DEBUG" /> 
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</log4j:configuration>

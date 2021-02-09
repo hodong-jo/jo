@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<food xmlns="http://codingsam.com">
+    <name>스시</name>
+    <type>일식</type>
+    <cost>100000</cost>
+</food>

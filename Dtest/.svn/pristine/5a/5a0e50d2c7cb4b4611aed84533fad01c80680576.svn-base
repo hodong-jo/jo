@@ -1,0 +1,19 @@
+#dataSourceFactoryClassName=com.datasource.impl.DriverDataSourceFactory
+# DBCP Note : https://d2.naver.com/helloworld/5102792
+
+dataSourceFactoryClassName=com.datasource.test.DBCPDataSourceFactory
+driverClassName=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin:@localhost:1521:orcl
+username=hodong2
+password=ghehd2
+connectionProperties=
+
+initialSize=5
+maxActive=10
+maxIdle=10
+minIdle=5
+maxWait=5000
+testOnBorrow=false
+testOnReturn=false
+testWhileIdle=false
+

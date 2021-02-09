@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ws.sosnoski.com/library" xmlns:ns1="http://ws.sosnoski.com/library">
+  <xs:element name="getItemsByTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:itemList"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="itemList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:books" minOccurs="0"/>
+        <xs:element ref="ns1:dvds" minOccurs="0"/>
+        <xs:element ref="ns1:hdDvds" minOccurs="0"/>
+        <xs:element ref="ns1:bluRayDvds" minOccurs="0"/>
+        <xs:element ref="ns1:dvdFutureDvds" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="books">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ns1:book"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="book">
+    <xs:complexType>
+      <xs:sequence>
+      	<xs:element ref="ns1:id" />
+      	<xs:element ref="ns1:type" />
+      	<xs:element ref="ns1:title" />
+      	<xs:element ref="ns1:author" />
+      	<xs:element ref="ns1:format" />
+      	<xs:element ref="ns1:price" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="author" type="xs:string"/>
+  <xs:element name="dvds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ns1:dvd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dvd">
+    <xs:complexType>
+      <xs:sequence>
+      	<xs:element ref="ns1:id" />
+      	<xs:element ref="ns1:type" />
+      	<xs:element ref="ns1:title" />
+      	<xs:element ref="ns1:director" />
+      	<xs:element maxOccurs="unbounded" ref="ns1:star" />
+      	<xs:element ref="ns1:price" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hdDvds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ns1:hdDvd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hdDvd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:id"/>
+        <xs:element ref="ns1:type"/>
+        <xs:element ref="ns1:title"/>
+        <xs:element ref="ns1:director"/>
+        <xs:element maxOccurs="unbounded" ref="ns1:star"/>
+        <xs:element ref="ns1:studio"/>
+        <xs:element ref="ns1:price"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="studio" type="xs:NCName"/>
+  <xs:element name="bluRayDvds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ns1:bluRayDvd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bluRayDvd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:id"/>
+        <xs:element ref="ns1:type"/>
+        <xs:element ref="ns1:title"/>
+        <xs:element ref="ns1:director"/>
+        <xs:element maxOccurs="unbounded" ref="ns1:star"/>
+        <xs:element ref="ns1:price"/>
+      </xs:sequence>
+      <xs:attribute name="releaseYear" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dvdFutureDvds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ns1:dvdFutureDvd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dvdFutureDvd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:id"/>
+        <xs:element ref="ns1:type"/>
+        <xs:element ref="ns1:title"/>
+        <xs:element ref="ns1:director"/>
+        <xs:element maxOccurs="unbounded" ref="ns1:star"/>
+        <xs:element ref="ns1:format"/>
+        <xs:element ref="ns1:price"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="id" type="xs:string"/>
+  <xs:element name="type" type="xs:NCName"/>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="format" type="xs:NCName"/>
+  <xs:element name="price" type="xs:decimal"/>
+  <xs:element name="director" type="xs:string"/>
+  <xs:element name="star" type="xs:string"/>
+</xs:schema>

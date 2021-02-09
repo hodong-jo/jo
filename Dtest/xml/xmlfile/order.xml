@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root>
+    <Customers>
+        <Customer CustomerID="customerid">
+            <CompanyName>companyname</CompanyName>
+            <ContactName>contactname</ContactName>
+            <ContactTitle>contactTitle</ContactTitle>
+            <Phone>phone</Phone>
+            <Fax>fax</Fax>
+            <FullAddress CustomerID="customerid">
+                <Address>address</Address>
+                <City>city</City>
+                <Region>region</Region>
+                <PostalCode>postalcode</PostalCode>
+                <Country>contry</Country>
+            </FullAddress>
+        </Customer>
+    </Customers>
+    <Orders>
+        <Order>
+            <CustomerID>customerid</CustomerID>
+            <EmployeeID>employeeid</EmployeeID>
+            <OrderDate>2019-12-11T16:28:06.717+09:00</OrderDate>
+            <RequiredDate>2019-12-11T16:28:06.717+09:00</RequiredDate>
+            <ShipInfo ShippedDate="2019-12-11T16:28:06.732+09:00">
+                <ShipVia>1</ShipVia>
+                <Freight>1</Freight>
+                <ShipName>shipname</ShipName>
+                <ShipAddress>shipaddress</ShipAddress>
+                <ShipCity>shipcity</ShipCity>
+                <ShipRegion>shipregion</ShipRegion>
+                <ShipPostalCode>postalcode</ShipPostalCode>
+                <ShipCountry>shipcountry</ShipCountry>
+            </ShipInfo>
+        </Order>
+    </Orders>
+</Root>

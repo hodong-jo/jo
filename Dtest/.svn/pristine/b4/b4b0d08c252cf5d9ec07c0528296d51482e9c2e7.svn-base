@@ -1,0 +1,9 @@
+[ {
+  "name" : "hodong",
+  "isNew" : true,
+  "age" : 26
+}, {
+  "name" : "BBB",
+  "isNew" : true,
+  "age" : 24
+} ]

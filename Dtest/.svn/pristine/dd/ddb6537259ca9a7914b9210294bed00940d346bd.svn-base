@@ -1,0 +1,57 @@
+package test2;
+
+import java.beans.PropertyVetoException;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Properties;
+
+import org.apache.commons.dbcp.BasicDataSource;
+
+public class DataSource {
+
+    private static DataSource datasource;
+    private BasicDataSource ds;
+
+    private DataSource() throws IOException, SQLException, PropertyVetoException {
+    	FileInputStream fis = new FileInputStream(ClassLoader.getSystemClassLoader().getResource("test.properties").getFile());
+    	Properties p = new Properties();
+    	p.load(fis);
+    	ds = new BasicDataSource();
+//    	if(p != null) {
+//    		for(String key : p.stringPropertyNames()) {
+//    			ds.addConnectionProperty(key, p.getProperty(key));
+//    		}
+//    	}
+    	
+        ds.setDriverClassName((String) p.get("driverClassName"));
+        ds.setUsername((String) p.get("username"));
+        ds.setPassword((String) p.get("password"));
+        ds.setUrl((String) p.get("url"));
+        
+        ds.setInitialSize(Integer.valueOf((String) p.get("initialSize")));
+        ds.setMaxActive(Integer.valueOf((String) p.get("maxActive")));
+        ds.setMaxIdle(Integer.valueOf((String) p.get("maxIdle")));
+        ds.setMinIdle(Integer.valueOf((String) p.get("minIdle")));
+        ds.setMaxWait(Long.valueOf((String) p.get("maxWait")));
+        ds.setTestOnBorrow(Boolean.valueOf((String) p.get("testOnBorrow")));
+        ds.setTestOnReturn(Boolean.valueOf((String) p.get("testOnReturn")));
+        ds.setTestWhileIdle(Boolean.valueOf((String) p.get("testWhileIdle")));
+
+    }
+
+    public static DataSource getInstance() throws IOException, SQLException, PropertyVetoException {
+        if (datasource == null) {
+            datasource = new DataSource();
+            return datasource;
+        } else {
+            return datasource;
+        }
+    }
+
+    public Connection getConnection() throws SQLException {
+        return this.ds.getConnection();
+    }
+
+}

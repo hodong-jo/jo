@@ -1,0 +1,26 @@
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
+
+public class LogTest {
+	private final static Logger logger = Logger.getLogger(LogTest.class.getName());
+
+	public static void main(String[] args) throws SecurityException, IOException {
+
+		try {
+            LogManager.getLogManager().readConfiguration(new FileInputStream("property/logging.properties"));
+        } catch (SecurityException | IOException e1) {
+            e1.printStackTrace();
+        }
+		
+		logger.warning("세월아 네월아~~~~~~~");
+		logger.info("대출이 어렵나요? 4천만 땡겨줘요");//사전체크하기
+		logger.info("Current date timestamp is " + System.currentTimeMillis()); 
+	}
+
+}

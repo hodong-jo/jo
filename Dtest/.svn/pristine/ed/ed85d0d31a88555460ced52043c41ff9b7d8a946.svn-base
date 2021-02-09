@@ -1,0 +1,6 @@
+
+public interface ThreadMonitorMBean {
+	
+	public int ThreadCounter();
+	public long totalThreadCounter();
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <donglist>
+        <seq>2238</seq>
+        <zipcode>152-761</zipcode>
+        <sido>서울</sido>
+        <gugun>구로구</gugun>
+        <dong>구로1동</dong>
+        <bunji></bunji>
+    </donglist>
+    <donglist>
+        <seq>2239</seq>
+        <zipcode>152-763</zipcode>
+        <sido>서울</sido>
+        <gugun>구로구</gugun>
+        <dong>구로1동</dong>
+        <bunji></bunji>
+    </donglist>
+    <donglist>
+        <seq>2240</seq>
+        <zipcode>152-762</zipcode>
+        <sido>서울</sido>
+        <gugun>구로구</gugun>
+        <dong>구로1동</dong>
+        <bunji></bunji>
+    </donglist>
+    <donglist>
+        <seq>2246</seq>
+        <zipcode>152-869</zipcode>
+        <sido>서울</sido>
+        <gugun>구로구</gugun>
+        <dong>구로1동</dong>
+        <bunji>700∼703</bunji>
+    </donglist>
+    <donglist>
+        <seq>2247</seq>
+        <zipcode>152-051</zipcode>
+        <sido>서울</sido>
+        <gugun>구로구</gugun>
+        <dong>구로1동</dong>
+        <bunji></bunji>
+    </donglist>
+</root>

@@ -1,0 +1,47 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonObject;
+
+public class GsonObject {
+	
+	static final String CONFIG_PATH = "megatus2.txt";
+
+	public static void main(String[] args) {
+		FileWriter fw = null;
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		JsonArray array = new JsonArray();
+		
+		JsonObject json = new JsonObject();
+		json.addProperty("User", "hodong");
+		json.addProperty("age", 26);
+		json.addProperty("isNew", true);
+		array.add(json);
+		
+		JsonObject json2 = new JsonObject();
+		json2.addProperty("User", "BBB");
+		json2.addProperty("age", 24);
+		json2.addProperty("isNew", true);
+		array.add(json2);
+		
+		
+		try {
+			fw = new FileWriter("./json/megatus.txt");
+			
+			gson.toJson(array, fw);
+			System.out.println("저장완료");
+		
+		} catch (JsonIOException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally {
+			if(fw != null) {try {fw.close();} catch (Exception e2) {}}
+		}
+	}
+
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="USERLIST">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element name="USER">
+					<xsd:complexType>
+						<xsd:group ref="userGroup" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="USER1">
+					<xsd:complexType>
+						<xsd:group ref="userGroup" />
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+	
+	
+	<xsd:group name="userGroup">
+		<xsd:sequence>
+				<xsd:element name="NAME" type="nameStringType" minOccurs="0" maxOccurs="1"/>
+				<xsd:element name="AGE" type="ageIntType" minOccurs="0" maxOccurs="1"/>
+				<xsd:element name="PHONE" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+				<xsd:element name="EMAIL" type="emailStringType" minOccurs="0" maxOccurs="1"/>
+				<xsd:element name="ADDRESS" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:group>
+	
+	
+	<xsd:simpleType name="nameStringType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="12"></xsd:maxLength>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="ageIntType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="1" />
+   			<xsd:maxInclusive value="120" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="emailStringType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></xsd:pattern>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

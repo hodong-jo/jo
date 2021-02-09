@@ -1,0 +1,69 @@
+package socket;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+
+import org.apache.log4j.Logger;
+
+import utils.IOUtil;
+
+public class DbTestClient {
+	static Logger logger = Logger.getLogger(TestClient.class);
+
+	public static void main(String[] args) {
+		File file = new File(ClassLoader.getSystemResource("zipcode_20080828.csv").getFile());
+		FileReader fr = null;
+		BufferedReader bfr = null;
+		
+		InetSocketAddress endpoint = new InetSocketAddress("localhost", 9000);
+		Socket client = new Socket();
+		OutputStream out = null;
+		InputStream in = null;
+		PrintWriter pw = null;
+		int connectTimeout = 1000; //milliseconds
+		try {
+			client.connect(endpoint, connectTimeout);
+			logger.info("Connected : [" + endpoint + "]");
+			
+			out = client.getOutputStream();
+			in = client.getInputStream();
+			
+			fr = new FileReader(file);
+			bfr = new BufferedReader(fr);
+			pw = new PrintWriter(out);
+			
+			String line = "";
+			while((line = bfr.readLine()) != null) {
+				pw.println(line);
+			}
+			pw.println("end");
+			pw.flush();
+			logger.info("Send : [" + "success" + "]");
+			
+			byte[] recvData = new byte[7];
+			in.read(recvData);
+			String output = new String(recvData);
+			logger.info("Recv : [" + output + "]");
+			
+		} catch (FileNotFoundException e) {
+			logger.error("Failed:", e);
+		} catch (IOException e) {
+			logger.error("Failed:", e);
+		} finally {
+			if( bfr != null) try { bfr.close(); } catch (Exception e) { e.printStackTrace(); }
+			IOUtil.close(in);
+			IOUtil.close(out);
+			IOUtil.close(client);
+			logger.info("Closed : [" + endpoint + "]");   
+		}
+	}
+
+}

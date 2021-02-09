@@ -1,0 +1,12 @@
+2019-11-05 19:46 [java.util.logging.LogRecord@568db2f2] [main] an info msg
+2019-11-05 19:46 [java.util.logging.LogRecord@378bf509] [main] a warning msg
+2019-11-05 19:46 [java.util.logging.LogRecord@5fd0d5ae] [main] a severe msg
+2019-11-05 19:46 [java.util.logging.LogRecord@568db2f2] [main] an info msg
+2019-11-05 19:46 [java.util.logging.LogRecord@378bf509] [main] a warning msg
+2019-11-05 19:46 [java.util.logging.LogRecord@5fd0d5ae] [main] a severe msg
+2019-11-05 19:47 [java.util.logging.LogRecord@6d03e736] [main] 세월아 네월아~~~~~~~
+2019-11-05 19:47 [java.util.logging.LogRecord@568db2f2] [main] 대출이 어렵나요? 4천만 땡겨줘요
+2019-11-05 19:47 [java.util.logging.LogRecord@378bf509] [main] Current date timestamp is 1572950857022
+2019-11-05 22:23 [java.util.logging.LogRecord@6d03e736] [main] 세월아 네월아~~~~~~~
+2019-11-05 22:23 [java.util.logging.LogRecord@568db2f2] [main] 대출이 어렵나요? 4천만 땡겨줘요
+2019-11-05 22:23 [java.util.logging.LogRecord@378bf509] [main] Current date timestamp is 1572960199946

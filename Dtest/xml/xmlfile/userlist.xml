@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<USERLIST>
+   <USER>
+      <NAME>홍길동</NAME>
+      <AGE>30</AGE>
+      <PHONE>010-1234-1234</PHONE>
+      <EMAIL>hong@nate.com</EMAIL>
+      <ADDRESS>경기도 안양시</ADDRESS>
+   </USER>
+   <USER>
+      <NAME>홍길순</NAME>
+      <AGE>16</AGE>
+      <PHONE>010-2345-2345</PHONE>
+      <EMAIL>soon@naver.com</EMAIL>
+      <ADDRESS>서울시 강북구</ADDRESS>
+   </USER>
+   <USER>
+      <NAME>이순신</NAME>
+      <AGE>55</AGE>
+      <PHONE>010-3456-3456</PHONE>
+      <EMAIL>sin@gmail.com</EMAIL>
+      <ADDRESS>서울시 강남구</ADDRESS>
+   </USER>
+   <USER>
+      <NAME>유관순</NAME>
+      <AGE>40</AGE>
+      <PHONE>010-4567-4567</PHONE>
+      <EMAIL>yoo@nate.com</EMAIL>
+      <ADDRESS>경기도 의정부시</ADDRESS>
+   </USER>
+   <USER>
+      <NAME>강감찬</NAME>
+      <AGE>42</AGE>
+      <PHONE>010-5678-5678</PHONE>
+      <EMAIL>kangg@hanmail.net</EMAIL>
+      <ADDRESS>서울시 강동구</ADDRESS>
+   </USER>
+   <USER>
+      <NAME>이율곡</NAME>
+      <AGE>98</AGE>
+      <PHONE>010-6789-6789</PHONE>
+      <EMAIL>yool@naver.com</EMAIL>
+      <ADDRESS>경기도 고양시</ADDRESS>
+   </USER>
+   <USER>
+      <NAME>을지문덕</NAME>
+      <AGE>53</AGE>
+      <PHONE>010-9876-9876</PHONE>
+      <EMAIL>moon@gmail.com</EMAIL>
+      <ADDRESS>경기도 수원시</ADDRESS>
+   </USER>
+   <USER>
+      <NAME>안창호</NAME>
+      <AGE>41</AGE>
+      <PHONE>010-8765-8765</PHONE>
+      <EMAIL>chang@naver.com</EMAIL>
+      <ADDRESS>경기도 안산시</ADDRESS>
+   </USER>
+   <USER>
+      <NAME>김구</NAME>
+      <AGE>35</AGE>
+      <PHONE>010-7654-7654</PHONE>
+      <EMAIL>koo@nate.com</EMAIL>
+      <ADDRESS>부산광역시</ADDRESS>
+   </USER>
+   <USER>
+      <NAME>김태희</NAME>
+      <AGE>31</AGE>
+      <PHONE>010-6543-6543</PHONE>
+      <EMAIL>hee@megatus.com</EMAIL>
+      <ADDRESS>서울시 구로구</ADDRESS>
+   </USER>
+   <USER>
+      <NAME>한예슬</NAME>
+      <AGE>30</AGE>
+      <PHONE>010-5432-5432</PHONE>
+      <EMAIL>suel@megatus.com</EMAIL>
+      <ADDRESS>서울시 구로구</ADDRESS>
+   </USER>
+</USERLIST>

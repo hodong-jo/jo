@@ -1,0 +1,74 @@
+package com.concurrent.threadpool;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
+
+public class ThreadPoolTest {
+
+	public static void main(String[] args) {
+		
+		ExecutorService executorService = Executors.newFixedThreadPool(3); //코어스레드수 3
+		
+		for(int i = 0; i < 10; i++) {
+			Runnable runnable = new Runnable() {
+
+				@Override
+				public void run() {
+					//스레드에게 시킬 작업 내용
+					ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor)executorService;
+					
+					int poolSize = threadPoolExecutor.getPoolSize();//스레드풀사이즈
+					String threadName = Thread.currentThread().getName();//스레드풀에있는 해당 스레드 이름
+					
+					System.out.println("총 스레드 개수 : " + poolSize + ", 작업 스레드 이름 : "+ threadName);
+					
+					int Value = Integer.parseInt("예외");
+				}
+			};
+			
+			Callable<String> task = new Callable<String>() {
+
+				@Override
+				public String call() throws Exception {
+					
+					ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor)executorService;
+					int poolSize = threadPoolExecutor.getPoolSize();//스레드풀사이즈
+					String threadName = Thread.currentThread().getName();//스레드풀에있는 해당 스레드 이름
+					
+					return threadName;
+				}
+				
+			};
+			
+//			executorService.execute(runnable); //스레드풀에 작업 처리 요청
+//			executorService.submit(runnable); //submit을 사용하면 예외가 발생되도 해당 스레드를 죽이지않고 실행한다
+			executorService.submit(task);//execute안됨?
+			
+			
+			try {
+				String a = executorService.submit(task).get();
+				System.out.println(a);
+//				System.out.println(executorService.submit(task).get());
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} catch (ExecutionException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			try {
+				Thread.sleep(10);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		executorService.shutdown();
+		
+	}
+
+}

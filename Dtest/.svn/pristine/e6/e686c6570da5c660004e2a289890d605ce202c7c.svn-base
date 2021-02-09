@@ -1,0 +1,21 @@
+package socket;
+
+import com.google.gson.Gson;
+
+public class Tes {
+
+	public static void main(String[] args) {
+		Gson gson = new Gson();
+		String jsonStr = "{\r\n" + 
+				"  \"seq\": 2348,\r\n" + 
+				"  \"zipcode\": \"152-050\",\r\n" + 
+				"  \"sido\": \"서울\",\r\n" + 
+				"  \"gugun\": \"구로구\",\r\n" + 
+				"  \"dong\": \"구로동\",\r\n" + 
+				"  \"bunji\": \"null\"\r\n" + 
+				"}";
+		System.out.println(gson.fromJson(jsonStr, Dong.class));
+
+	}
+
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="donglist"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="donglist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="seq"/>
+        <xs:element ref="zipcode"/>
+        <xs:element ref="sido"/>
+        <xs:element ref="gugun"/>
+        <xs:element ref="dong"/>
+        <xs:element ref="bunji"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="seq" type="xs:integer"/>
+  <xs:element name="zipcode" type="xs:NMTOKEN"/>
+  <xs:element name="sido" type="xs:NCName"/>
+  <xs:element name="gugun" type="xs:NCName"/>
+  <xs:element name="dong" type="xs:NCName"/>
+  <xs:element name="bunji" type="xs:string"/>
+</xs:schema>

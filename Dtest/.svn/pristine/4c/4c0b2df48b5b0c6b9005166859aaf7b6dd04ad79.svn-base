@@ -1,0 +1,27 @@
+import java.io.IOException;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
+public class LogTest {
+	private final static Logger logger = Logger.getGlobal();
+
+	public static void main(String[] args) throws SecurityException, IOException {
+		// TODO Auto-generated method stub
+		
+		logger.setLevel(Level.INFO);
+		
+		Handler handler = new FileHandler("C:\\Users\\USER\\Desktop\\eclipse\\eclipse-workspace\\Dtest\\logs\\test.log",true);
+		
+		CustomLogFormatter formatter = new CustomLogFormatter();
+		handler.setFormatter(formatter);
+		logger.addHandler(handler);
+		
+		logger.warning("세월아 네월아~~~~~~~");
+		logger.info("대출이 어렵나요? 4천만 땡겨줘요");
+		logger.info("Current date timestamp is " + System.currentTimeMillis());
+	}
+
+}

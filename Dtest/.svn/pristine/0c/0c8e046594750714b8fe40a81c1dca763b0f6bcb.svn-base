@@ -1,0 +1,102 @@
+package dom;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+import javax.xml.XMLConstants;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+
+import org.apache.log4j.Logger;
+import org.w3c.dom.Document;
+import org.xml.sax.ErrorHandler;
+import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
+
+import utils.IOUtil;
+
+public class DomPhonebook {
+
+	public static void main(String[] args) {
+		Logger logger = Logger.getLogger("CONSOLE");
+		
+		InputStream xslIn = null;
+		OutputStream resultOut = null;	
+		
+		try {
+			String xmlFileName = "phonebook.xml";
+			String xslFileName = "phonebook.xsl";
+			String resultFileName = "phonebook.html";
+			
+			File xmlFile = new File(ClassLoader.getSystemResource(xmlFileName).getFile());
+			File xslFile = new File(ClassLoader.getSystemResource(xslFileName).getFile());
+			File resultOutFile = new File(xmlFile.getParent(), resultFileName);
+			
+			xslIn = new FileInputStream(xslFile);
+			resultOut = new FileOutputStream(resultOutFile);
+			
+			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+			Schema schema = schemaFactory.newSchema(ClassLoader.getSystemResource("phonebook.xsd"));
+			
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			factory.setIgnoringElementContentWhitespace(true);
+			factory.setSchema(schema);
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			builder.setErrorHandler(new ErrorHandler(){
+				@Override
+				public void warning(SAXParseException e)
+						throws SAXException {
+					throw e;
+				}
+
+				@Override
+				public void error(SAXParseException e)
+						throws SAXException {
+					throw e;
+				}
+
+				@Override
+				public void fatalError(SAXParseException e)
+						throws SAXException {
+					throw e;
+				}
+			});
+			Document document = builder.parse(xmlFile);
+			
+			TransformerFactory transformerFactory = TransformerFactory.newInstance();
+			Transformer transformer = transformerFactory.newTransformer(new StreamSource(xslIn));
+			transformer.transform(new DOMSource(document), new StreamResult(resultOut));
+			
+			logger.warn(resultFileName + " 저장완료");
+			
+		} catch (SAXException e1) {
+			e1.printStackTrace();
+		} catch (ParserConfigurationException e1) {
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		} catch (TransformerConfigurationException e1) {
+			e1.printStackTrace();
+		} catch (TransformerException e1) {
+			e1.printStackTrace();
+		} finally {
+			IOUtil.close(xslIn);
+			IOUtil.close(resultOut);
+		}
+	}
+
+}

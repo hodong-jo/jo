@@ -1,0 +1,35 @@
+<html>
+<body>
+<h2> phonebook </h2>
+<table border="1">
+<tr>
+<td>이름</td><td>이메일</td><td>휴대폰</td><td>웹</td>
+</tr>
+<tr>
+<td>Joe Wang</td><td>joe@yourserver.com</td><td>202-999-9999</td><td>www.java2s.com</td>
+</tr>
+<tr>
+<td>Karol</td><td>karol@yourserver.com</td><td>306-999-9999</td><td>www.java2s.com</td>
+</tr>
+<tr>
+<td>Green</td><td>green@yourserver.com</td><td>202-414-9999</td><td>www.java2s.com</td>
+</tr>
+</table>
+					이름 : <strong>Joe Wang</strong>
+					이름 : <strong>Karol</strong>
+					이름 : <strong>Green</strong>
+<br>
+					이메일 : <strong>joe@yourserver.com</strong>
+					이메일 : <strong>karol@yourserver.com</strong>
+					이메일 : <strong>green@yourserver.com</strong>
+<br>
+					휴대폰 : <strong>202-999-9999</strong>
+					휴대폰 : <strong>306-999-9999</strong>
+					휴대폰 : <strong>202-414-9999</strong>
+<br>
+					웹 : <strong>Joe Wangjoe@yourserver.com202-999-9999www.java2s.com</strong>
+					웹 : <strong>Karolkarol@yourserver.com306-999-9999www.java2s.com</strong>
+					웹 : <strong>Greengreen@yourserver.com202-414-9999www.java2s.com</strong>
+<br>
+</body>
+</html>

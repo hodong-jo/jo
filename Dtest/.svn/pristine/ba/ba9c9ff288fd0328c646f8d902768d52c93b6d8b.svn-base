@@ -1,0 +1,135 @@
+10월 31, 2019 5:20:25 오후 LogTest main
+경고: 세월아 네월아~~~~~~~
+10월 31, 2019 5:20:25 오후 LogTest main
+정보: 대출이 어렵나요? 4천만 땡겨줘요
+10월 31, 2019 5:20:25 오후 LogTest main
+정보: Current date timestamp is 1572510025338
+10월 31, 2019 5:20:32 오후 LogTest main
+경고: 세월아 네월아~~~~~~~
+10월 31, 2019 5:20:32 오후 LogTest main
+정보: 대출이 어렵나요? 4천만 땡겨줘요
+10월 31, 2019 5:20:32 오후 LogTest main
+정보: Current date timestamp is 1572510032160
+10월 31, 2019 5:20:38 오후 LogTest main
+경고: 세월아 네월아~~~~~~~
+10월 31, 2019 5:20:38 오후 LogTest main
+정보: 대출이 어렵나요? 4천만 땡겨줘요
+10월 31, 2019 5:20:38 오후 LogTest main
+정보: Current date timestamp is 1572510038474
+10월 31, 2019 5:21:39 오후 LogTest main
+경고: 세월아 네월아~~~~~~~
+10월 31, 2019 5:21:39 오후 LogTest main
+정보: 대출이 어렵나요? 4천만 땡겨줘요
+10월 31, 2019 5:21:39 오후 LogTest main
+정보: Current date timestamp is 1572510099358
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-31T17:22:19</date>
+  <millis>1572510139021</millis>
+  <sequence>0</sequence>
+  <logger>LogTest</logger>
+  <level>WARNING</level>
+  <class>LogTest</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>세월아 네월아~~~~~~~</message>
+</record>
+<record>
+  <date>2019-10-31T17:22:19</date>
+  <millis>1572510139108</millis>
+  <sequence>1</sequence>
+  <logger>LogTest</logger>
+  <level>INFO</level>
+  <class>LogTest</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>대출이 어렵나요? 4천만 땡겨줘요</message>
+</record>
+<record>
+  <date>2019-10-31T17:22:19</date>
+  <millis>1572510139108</millis>
+  <sequence>2</sequence>
+  <logger>LogTest</logger>
+  <level>INFO</level>
+  <class>LogTest</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Current date timestamp is 1572510139108</message>
+</record>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-31T17:25:21</date>
+  <millis>1572510321226</millis>
+  <sequence>0</sequence>
+  <logger>LogTest</logger>
+  <level>WARNING</level>
+  <class>LogTest</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>세월아 네월아~~~~~~~</message>
+</record>
+<record>
+  <date>2019-10-31T17:25:21</date>
+  <millis>1572510321307</millis>
+  <sequence>1</sequence>
+  <logger>LogTest</logger>
+  <level>INFO</level>
+  <class>LogTest</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>대출이 어렵나요? 4천만 땡겨줘요</message>
+</record>
+<record>
+  <date>2019-10-31T17:25:21</date>
+  <millis>1572510321307</millis>
+  <sequence>2</sequence>
+  <logger>LogTest</logger>
+  <level>INFO</level>
+  <class>LogTest</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Current date timestamp is 1572510321307</message>
+</record>
+</log>
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-31T17:27:23</date>
+  <millis>1572510443177</millis>
+  <sequence>0</sequence>
+  <logger>LogTest</logger>
+  <level>WARNING</level>
+  <class>LogTest</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>세월아 네월아~~~~~~~</message>
+</record>
+<record>
+  <date>2019-10-31T17:27:23</date>
+  <millis>1572510443252</millis>
+  <sequence>1</sequence>
+  <logger>LogTest</logger>
+  <level>INFO</level>
+  <class>LogTest</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>대출이 어렵나요? 4천만 땡겨줘요</message>
+</record>
+<record>
+  <date>2019-10-31T17:27:23</date>
+  <millis>1572510443252</millis>
+  <sequence>2</sequence>
+  <logger>LogTest</logger>
+  <level>INFO</level>
+  <class>LogTest</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Current date timestamp is 1572510443252</message>
+</record>
+</log>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="property"/>
+	<classpathentry kind="src" path="scheduler"/>
+	<classpathentry kind="src" path="reflection"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="src" path="classloader"/>
+	<classpathentry kind="src" path="thread"/>
+	<classpathentry kind="src" path="collectionmap"/>
+	<classpathentry kind="src" path="io"/>
+	<classpathentry kind="src" path="concurrent"/>
+	<classpathentry kind="src" path="base"/>
+	<classpathentry kind="src" path="log4j"/>
+	<classpathentry kind="src" path="jmx"/>
+	<classpathentry kind="src" path="database"/>
+	<classpathentry excluding="object/" kind="src" path="json"/>
+	<classpathentry kind="src" path="tcp"/>
+	<classpathentry excluding="xmlfile/|xsd/|xslt/" kind="src" path="xml"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="lib/jmxremote_optional.jar"/>
+	<classpathentry kind="lib" path="lib/jmxtools.jar"/>
+	<classpathentry kind="lib" path="/java_technical_training/lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="lib/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool-1.5.7.jar"/>
+	<classpathentry kind="lib" path="lib/org.apache.commons.io.jar"/>
+	<classpathentry kind="lib" path="xml/xmlfile"/>
+	<classpathentry kind="lib" path="xml/xsd"/>
+	<classpathentry kind="lib" path="xml/xslt"/>
+	<classpathentry kind="lib" path="lib/stax-utils-20070216.jar"/>
+	<classpathentry kind="lib" path="lib/trang.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbutils-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/tibero6-jdbc-14.jar"/>
+	<classpathentry kind="lib" path="lib/megaware-common-2.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/megaware-util-2.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/mariadb-java-client-2.7.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/mariadb-java-client-2.7.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

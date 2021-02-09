@@ -1,0 +1,51 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.log4j.Logger;
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.map.ObjectWriter;
+import org.codehaus.jackson.util.DefaultPrettyPrinter;
+
+
+public class JacksonObject {
+
+	public static void main(String[] args) {
+		ObjectMapper mapper = new ObjectMapper();
+		ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
+		
+		List<Object> list = new ArrayList<Object>();
+		
+		Map<String, Object> data1 = new HashMap<String, Object>();
+		data1.put("name", "hodong");
+		data1.put("age", 26);
+		data1.put("isNew", true);
+		list.add(data1);
+		
+		Map<String, Object> data2 = new HashMap<String, Object>();
+		data2.put("name", "BBB");
+		data2.put("age", 24);
+		data2.put("isNew", true);
+		list.add(data2);
+		
+		try {
+			
+			writer.writeValue(new FileWriter("./json/megatus2.txt"),list);
+			Logger logger = Logger.getLogger("syncLogTestLogger");
+			logger.warn("megatus2.txt 저장완료");
+			
+		} catch (JsonGenerationException e) {
+			e.printStackTrace();
+		} catch (JsonMappingException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}
